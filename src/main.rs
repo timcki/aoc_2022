@@ -1,31 +1,31 @@
-mod common;
-mod day1;
-mod day3;
-mod day4;
-mod day5;
+mod solutions;
 
-use std::io;
+use solutions::{Day1, Day3, Day4, Day5, Day6, Day7};
+use std::io::Result;
 
-use day1::Day1;
-use day3::Day3;
-use day4::Day4;
-use day5::Day5;
-
-fn main() -> io::Result<()> {
+fn main() -> Result<()> {
     print!("Solving day 1: ");
-    let (r1, r2) = Day1::solve("inputs/1_day.dat");
+    let (r1, r2) = Day1::solve("inputs/1.dat").unwrap();
     println!("{}, {}", r1, r2);
 
     print!("Solving day 3: ");
-    let (r1, r2) = Day3::solve("inputs/3_day.dat").unwrap();
+    let (r1, r2) = Day3::solve("inputs/3.dat").unwrap();
     println!("{}, {}", r1, r2);
 
     print!("Solving day 4: ");
-    let (r1, r2) = Day4::solve("inputs/4_day.dat").unwrap();
+    let (r1, r2) = Day4::solve("inputs/4.dat").unwrap();
     println!("{}, {}", r1, r2);
 
     print!("Solving day 5: ");
-    let (r1, r2) = Day5::solve("inputs/5_day.dat").unwrap();
+    let (r1, r2) = Day5::solve("inputs/5.dat").unwrap();
+    println!("{}, {}", r1, r2);
+
+    print!("Solving day 6: ");
+    let (r1, r2) = Day6::solve("inputs/6.dat").unwrap();
+    println!("{}, {}", r1, r2);
+
+    print!("Solving day 7: ");
+    let (r1, r2) = Day7::solve("inputs/7.dat").unwrap();
     println!("{}, {}", r1, r2);
     Ok(())
 }
