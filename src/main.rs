@@ -1,11 +1,15 @@
 mod solutions;
 
-use solutions::{Day1, Day3, Day4, Day5, Day6, Day7};
+use solutions::{Day1, Day2, Day3, Day4, Day5, Day6, Day7};
 use std::io::Result;
 
 fn main() -> Result<()> {
     print!("Solving day 1: ");
     let (r1, r2) = Day1::solve("inputs/1.dat").unwrap();
+    println!("{}, {}", r1, r2);
+
+    print!("Solving day 2: ");
+    let (r1, r2) = Day2::solve("inputs/2.dat").unwrap();
     println!("{}, {}", r1, r2);
 
     print!("Solving day 3: ");
