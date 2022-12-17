@@ -2,7 +2,7 @@
 mod common;
 
 use common::read_file;
-use std::{collections::HashMap, fs::DirEntry};
+use std::collections::HashMap;
 
 pub struct Day7;
 

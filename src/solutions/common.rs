@@ -3,10 +3,6 @@ use std::{
     io::{self, Read},
 };
 
-pub trait Solver<R> {
-    fn solve(path: &str) -> Option<(R, R)>;
-}
-
 #[allow(dead_code)]
 pub fn read_file(s: &str) -> io::Result<String> {
     let mut file = File::open(s)?;

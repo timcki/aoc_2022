@@ -1,7 +1,7 @@
 #[path = "common.rs"]
 mod common;
 
-use common::{read_file, Solver};
+use common::read_file;
 
 pub struct Day1;
 
